@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080914" />
+  <meta name="description" content="For My Cutie — a small, honest letter." />
+  <title>For My Cutie ✦</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="universe" aria-hidden="true"></canvas>
+  <div class="nebula nebula-one" aria-hidden="true"></div><div class="nebula nebula-two" aria-hidden="true"></div>
+  <div id="cursor-light" aria-hidden="true"></div><div id="cursor-sparkles" aria-hidden="true"></div>
+
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <div class="loader-heart">♥</div><p id="loader-text">Connecting...</p><div class="loader-line"><i></i></div>
+  </div>
+
+  <header class="topbar"><a class="brand" href="#welcome">for my <em>cutie</em><span>✦</span></a><div class="topbar-right"><span id="clock" aria-label="Local time"></span><button class="sound-toggle" id="sound-toggle" aria-label="Play ambient music"><span>♪</span><i></i></button></div></header>
+
+  <main>
+    <section class="panel hero" id="welcome">
+      <p class="eyebrow reveal">A little space, just for you</p>
+      <h1 class="hero-title"><span class="reveal">Hey,</span> <i class="reveal delay-1">Cutie</i> <b class="reveal delay-2">♥</b></h1>
+      <p class="hero-copy reveal delay-3">If you're reading this...<br>thank you for giving me two minutes.</p>
+      <a class="button primary reveal delay-4" href="#the-date">Continue <span>↓</span></a>
+      <p class="scroll-note">scroll gently <span></span></p>
+    </section>
+
+    <section class="panel date-section" id="the-date">
+      <div class="date-orbit" aria-hidden="true"><div></div><span>22</span></div>
+      <div class="section-content narrow">
+        <p class="eyebrow observer">22 February 2026</p>
+        <div class="timeline observer"><i></i><span>one date, held close</span></div>
+        <h2 class="line-reveal">Some dates become memories.<br><em>Some memories become lessons.</em><br>And some lessons change people.</h2>
+      </div>
+    </section>
+
+    <section class="panel apology" id="apology">
+      <div class="section-content apology-grid">
+        <div><p class="eyebrow observer">An honest apology</p><h2 class="observer">I am sorry.</h2></div>
+        <div class="apology-copy observer">
+          <p>I spoke rudely, and that was wrong. I take responsibility for the hurt my words may have caused.</p>
+          <p>There is no excuse I want to hide behind. I am learning that care has to show up in tone, patience, and the choices I make—especially in difficult moments.</p>
+          <p>I want to grow into someone better, not by making promises you have to carry, but by doing the work consistently.</p>
+        </div>
+      </div>
+      <div class="petal petal-a">✦</div><div class="petal petal-b">♥</div>
+    </section>
+
+    <section class="panel qualities" id="qualities">
+      <div class="section-content"><p class="eyebrow observer">Six small truths</p><h2 class="observer">The things that make you <em>you.</em></h2>
+        <div class="card-grid">
+          <article class="quality-card observer"><span>01</span><div class="card-icon">☺</div><h3>Your smile</h3><p>It has a way of making ordinary moments feel lighter.</p></article>
+          <article class="quality-card observer"><span>02</span><div class="card-icon">✦</div><h3>Your kindness</h3><p>The kind that reaches people quietly, without asking for credit.</p></article>
+          <article class="quality-card observer"><span>03</span><div class="card-icon">∞</div><h3>Your patience</h3><p>A softness that makes people feel safe enough to be human.</p></article>
+          <article class="quality-card observer"><span>04</span><div class="card-icon">♡</div><h3>Your honesty</h3><p>Clear, brave, and always worth listening to.</p></article>
+          <article class="quality-card observer"><span>05</span><div class="card-icon">☀</div><h3>The way you care</h3><p>It lives in details most people might never even notice.</p></article>
+          <article class="quality-card observer"><span>06</span><div class="card-icon">☾</div><h3>The peace you bring</h3><p>A calm presence that stays with people long after goodbye.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel letter-section" id="letter">
+      <div class="section-content letter-wrap"><p class="eyebrow observer">An open letter</p>
+        <article class="letter observer" id="letter-card"><div class="letter-seal">♥</div><div class="letter-flap"></div><div class="letter-paper"><p class="letter-date">To you, always</p><div class="typed-message" id="typed-message" data-text="Oye buddhu, mera sach mein mood kharab tha ki tumne mujhse poore din baat nahi ki. But I love you, buddhu.\n\nMain bas isi liye gussa thi, aur kuch nahi. Mera baccha, mera pyaara baccha, ek kissi se maan jayega na? Mujhe pata hai, maan jayega.\n\nAb chalo, hanso nahi. Yeh lo puchi — muwaaahh ♥"></div></div></article>
+        <button class="text-button observer" id="open-letter">Open the letter <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="panel gallery-section" id="memories">
+      <div class="section-content"><p class="eyebrow observer">Little frames</p><h2 class="observer">Memories, in <em>soft focus.</em></h2>
+        <div class="gallery">
+          <!-- Gallery images load eagerly and stay visible even if an animation is unavailable. -->
+          <figure class="polaroid p-one"><img src="assets/images/memory-1.jpeg" alt="A favorite memory together"><figcaption>a favorite day</figcaption></figure>
+          <figure class="polaroid p-two"><img src="assets/images/memory-2.jpeg" alt="A shared memory together"><figcaption>the little things</figcaption></figure>
+          <figure class="polaroid p-three"><img src="assets/images/memory-3.jpeg" alt="Holding hands in a memory together"><figcaption>worth keeping</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel sky-section" id="sky">
+      <div class="constellation" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><svg viewBox="0 0 500 280"><path d="M60 210 L150 80 L245 145 L340 50 L440 170"/></svg></div>
+      <div class="section-content narrow center"><p class="eyebrow observer">Under the same sky</p><h2 class="observer">If life gives me another chance...<br><em>I promise my actions will speak louder than my words.</em></h2></div>
+      <div class="single-shooting-star" aria-hidden="true"></div>
+    </section>
+
+    <section class="panel final" id="final">
+      <div class="final-heart" aria-hidden="true">♥</div><div class="section-content narrow center"><p class="eyebrow observer">A gentle ending</p><h2 class="observer">Thank you for reading this.</h2><p class="final-copy observer">No matter what your decision is,<br>I’ll always respect it.</p>
+        <div class="choice-row observer"><button class="button choice talk">💚 Let’s Talk</button><button class="button choice time">💛 Need Some Time</button></div><p id="choice-message" class="choice-message" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <aside class="side-tools"><button id="quote-button" aria-label="Show a quote">✦</button><div id="quote-popover" role="status">“The most meaningful apologies are followed by changed behaviour.”</div><div class="countdown"><small>since 22 feb 2026</small><strong id="countdown">00d 00h</strong></div></aside>
+  <div class="music-panel" id="music-panel"><label>Ambient volume <input id="volume" type="range" min="0" max="1" value="0.35" step="0.05"></label></div>
+  <audio id="ambient-audio" loop preload="none"><source src="assets/music/ambient.mp3" type="audio/mpeg"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
